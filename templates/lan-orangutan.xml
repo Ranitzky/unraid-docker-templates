@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>lan-orangutan</Name>
+  <Repository>ghcr.io/291-group/lan-orangutan:latest</Repository>
+  <Registry>https://github.com/291-Group/LAN-Orangutan/pkgs/container/lan-orangutan</Registry>
+  <Network>host</Network>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/291-Group/LAN-Orangutan/issues</Support>
+  <Project>https://github.com/291-Group/LAN-Orangutan</Project>
+  <Overview>Network inventory and device discovery dashboard for your LAN.&lt;br&gt;&lt;br&gt;This Unraid template is maintained by the community, not the original developer.&lt;br&gt;All credit goes to the original author, 291-Group.</Overview>
+  <Category>Network:Management Status:Beta Tools:</Category>
+  <WebUI>http://[IP]:[PORT:ORANGUTAN_PORT]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/ranitzky/unraid-docker-templates/main/templates/lan-orangutan.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/291-Group/LAN-Orangutan/main/client/public/orangutan.svg</Icon>
+  <ExtraParams>--cap-add=NET_RAW --cap-add=NET_ADMIN --cap-add=NET_BIND_SERVICE</ExtraParams>
+  <Date>2026-09-17</Date>
+  <Config Name="WebUI Port" Target="ORANGUTAN_PORT" Default="291" Description="Web interface port variable." Type="Variable" Display="always" Required="true" Mask="false">291</Config>
+  <Config Name="Appdata Storage" Target="/var/lib/lan-orangutan" Default="/mnt/user/appdata/lan-orangutan" Mode="rw" Description="Persistent data storage" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/lan-orangutan</Config>
+  <Config Name="Timezone" Target="TZ" Default="Europe/Berlin" Description="Container timezone" Type="Variable" Display="advanced" Required="false" Mask="false">Europe/Berlin</Config>
+</Container>
