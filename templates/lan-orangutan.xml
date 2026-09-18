@@ -11,7 +11,7 @@
   <Category>Network:Management Status:Beta Tools:</Category>
   <WebUI>http://[IP]:[PORT:ORANGUTAN_PORT]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/ranitzky/unraid-docker-templates/main/templates/lan-orangutan.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/291-Group/LAN-Orangutan/main/client/public/orangutan.svg</Icon>
+  <Icon>https://github.com/291-Group/LAN-Orangutan/blob/main/internal/web/static/orangutan.svg?raw=1</Icon>
   <ExtraParams>--cap-add=NET_RAW --cap-add=NET_ADMIN --cap-add=NET_BIND_SERVICE</ExtraParams>
   <Date>2026-09-17</Date>
   <Config Name="WebUI Port" Target="ORANGUTAN_PORT" Default="291" Description="Web interface port variable." Type="Variable" Display="always" Required="true" Mask="false">291</Config>
