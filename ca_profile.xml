@@ -1,0 +1,14 @@
+<CommunityApplications>
+  <!-- Required profile -->
+  <Profile>
+    Just doing my thing.
+  </Profile>
+  <!-- Optional icon -->
+  <Icon>https://avatars.githubusercontent.com/u/5215587?s=400&amp;u=6c087f83d100aac36a8458ec028972b4d6bef6bd&amp;v=4</Icon>
+  <!-- Optional web page -->
+  <WebPage>https://github.com/Ranitzky/</WebPage>
+  <!-- Optional donation link -->
+  <DonateLink>https://github.com/sponsors/Ranitzky</DonateLink>
+  <!-- Optional donation text -->
+  <DonateText>Support this project</DonateText>
+</CommunityApplications>
