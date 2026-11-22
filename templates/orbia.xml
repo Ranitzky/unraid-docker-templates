@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>orbia</Name>
+  <Repository>ghcr.io/ranitzky/orbia:latest</Repository>
+  <Registry>https://github.com/Ranitzky/orbia/pkgs/container/orbia</Registry>
+  <Network>host</Network>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/Ranitzky/orbia/issues</Support>
+  <Project>https://github.com/Ranitzky/orbia</Project>
+  <Overview>A blazing-fast launcher that opens your favorite links in three keystrokes.</Overview>
+  <Category>Tools:Utilities</Category>
+  <Network>bridge</Network>
+  <WebUI>http://[IP]:[PORT:8726]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/ranitzky/unraid-docker-templates/main/templates/orbia.xml</TemplateURL>
+  <Icon>https://github.com/Ranitzky/orbia/blob/main/internal/web/static/orbia.svg?raw=1</Icon>
+  <Date>2026-11-11</Date>
+  <Config Name="WebUI Port" Target="8726" Default="8726" Mode="tcp" Description="Host port for the Orbia web interface." Type="Port" Display="always" Required="true" Mask="false">8726</Config>
+  <Config Name="App Data" Target="/data" Default="/mnt/user/appdata/orbia" Mode="rw" Description="Persistent storage for the Orbia SQLite database." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/orbia</Config>
+</Container>
